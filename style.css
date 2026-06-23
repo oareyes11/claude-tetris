@@ -213,6 +213,77 @@ kbd {
   background: var(--text-accent-hover);
 }
 
+/* ---- Pause menu ---- */
+.pause-box {
+  gap: 10px;
+  min-width: 200px;
+}
+
+#pause-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--text-accent);
+  margin-bottom: 4px;
+}
+
+.menu-btn {
+  width: 100%;
+  background: var(--text-accent);
+  color: var(--btn-text-on-accent);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.15s;
+}
+
+.menu-btn:hover {
+  background: var(--text-accent-hover);
+}
+
+.pause-controls {
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.pause-controls.hidden {
+  display: none;
+}
+
+.start-level {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.start-level-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#start-level {
+  flex: 1;
+  accent-color: var(--text-accent);
+  cursor: pointer;
+}
+
+#start-level-value {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-accent);
+  min-width: 20px;
+  text-align: right;
+}
+
 /* ---- Theme toggle ---- */
 #theme-toggle {
   position: absolute;
